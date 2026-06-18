@@ -67,8 +67,8 @@ WSL fallback 可能有额外问题：Windows 路径需要换成 WSL 路径（例
 
 脚本源文件：
 
-- hook 脚本：[scripts/block-dangerous.sh](scripts/block-dangerous.sh)
-- 验证脚本：[scripts/test-block-dangerous.sh](scripts/test-block-dangerous.sh)
+- hook 脚本：[../scripts/block-dangerous.sh](../scripts/block-dangerous.sh)
+- 验证脚本：[../scripts/test-block-dangerous.sh](../scripts/test-block-dangerous.sh)
 
 复制到目标位置：
 

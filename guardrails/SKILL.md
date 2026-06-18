@@ -9,7 +9,7 @@ description: 设置 PreToolUse hook，在执行危险命令前拦截并阻止。
 
 ## 默认拦截的命令
 
-完整清单见 [blocked-commands.md](blocked-commands.md)，按以下类型组织：
+完整清单见 [references/blocked-commands.md](references/blocked-commands.md)，按以下类型组织：
 
 - Git 远端与历史改写
 - Git 本地修改丢弃与本地数据删除
@@ -20,8 +20,8 @@ description: 设置 PreToolUse hook，在执行危险命令前拦截并阻止。
 
 | Agent | 文档 |
 |---|---|
-| Claude Code | [claude-code.md](claude-code.md) |
-| Codex | [codex.md](codex.md) |
+| Claude Code | [references/claude-code.md](references/claude-code.md) |
+| Codex | [references/codex.md](references/codex.md) |
 
 ## 脚本位置
 
