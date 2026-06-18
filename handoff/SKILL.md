@@ -5,9 +5,7 @@ description: Compact the current conversation into a handoff document for anothe
 
 编写一份交接文档，总结当前对话中对下一位 agent 继续工作有用的信息。
 
-先确定项目根目录：从当前工作目录向上查找 `.git` root；如果找不到，再向上查找最近的 `CLAUDE.md` 或 `AGENTS.md` 所在目录；如果仍找不到，就使用当前工作目录。
-
-交接文档应保存在项目根目录的 `handoffs/` 目录下。如果该目录不存在，先创建它。
+交接文档默认保存在当前项目的 `docs/handoffs/` 目录下。如果该目录不存在，先创建它。
 
 生成文件路径时，创建一个形如 `handoff-YYYYMMDD-HHMM-[slug].md` 的 Markdown 文件：
 
