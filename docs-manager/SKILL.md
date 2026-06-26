@@ -11,14 +11,14 @@ description: manage docs according to changes
 - 子目录下的 `AGENT_GUIDE.md` 和 `README.md`。
 - `docs/` 下的项目文档。
 
-不默认更新第三方仓库、vendor/submodule、下载的外部代码、临时目录、归档/备份目录中的文档，除非用户明确要求。
+默认不更新第三方仓库、vendor/submodule、下载的外部代码、临时目录、归档/备份目录中的文档，除非用户明确要求。
 
 ## 更新流程
 
 1. 确认项目根目录和当前 git 状态。
-2. 阅读当前项目的规则文档和相关入口文档；如果本轮上下文中已经读取并确认是最新内容，则不必重复阅读。
+2. 阅读当前项目的规则文档和相关入口文档；如果本轮上下文中已经读取并确认是最新内容，不必重复阅读。
 3. 根据本次变更判断受影响的文档，只更新受项目变更影响的文档。
-4. 按项目已有风格、语言、排序规则和目录分层更新文档。
+4. 按项目已有风格和规则更新文档。
 5. 如果发现某个目录需要新增 `AGENT_GUIDE.md` 或 `README.md`，可创建文件并向用户报告。
 6. 更新完成后做基本一致性检查。
 
@@ -44,7 +44,7 @@ description: manage docs according to changes
 - `AGENTS.md`：一般 agent 入口。
 - `CLAUDE.md`：Claude Code 入口。
 
-这两个文件用于记录项目目录结构以及 agent guide 索引。两者内容通常需要保持同步。
+这两个文件用于记录项目目录结构以及各个子目录的 agent 入口。两者内容通常需要保持同步。
 
 根目录不使用 `AGENT_GUIDE.md`。
 
@@ -57,9 +57,8 @@ description: manage docs according to changes
 `AGENT_GUIDE.md` 主要给 agent 读取，通常应包含：
 
 - 当前目录的用途和边界；
-- 目录说明；
-- 推荐读取顺序；
-- 按任务应读取的目录入口
+- 目录说明，如果子目录还有 agent 入口也要指明入口；
+- 根据任务应读取的目录
 
 ### 人类阅读入口
 
@@ -70,8 +69,7 @@ description: manage docs according to changes
 `README.md` 用于给人快速理解目录内容，通常应包含：
 
 - 这个目录是什么；
-- 用户应该先看哪些文件；
-- 当前目录下哪些文件最重要；
+- 当前目录下哪些文件说明；
 - 简短的阅读路径或状态说明。
 
 `README.md` 不应承载复杂 agent 执行规则、实验命令契约、生成物维护规则或长篇操作约束。
